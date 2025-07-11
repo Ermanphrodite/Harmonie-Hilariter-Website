@@ -11,6 +11,7 @@
     <link rel="icon" type="image/vnd.icon" href="ressources/img/general/logo-miniature.png"/>
     <meta name="description" content="L'Harmonie Hilariter & son école de musique est une association de musique depuis 1879 qui regroupe aujourd'hui un orchestre d'harmonie, son école de musique et d'autres formations musicales."/>
 </head>
+
 <body>
     <header>
         <nav class="header-navbar">
@@ -32,6 +33,12 @@
                         <li class="header-sous-button"><a href="ecole-de-musique.html#school-news-h2"  alt="bouton les nouveautes" aria-label="Bouton du sous menu orchestre pour rejoindre les nouveautés à l'école de musique" title="Les nouveautés">Les nouveautés</a></li>
                         <li class="header-sous-button"><a href="ecole-de-musique.html#school-timetable-h2"  alt="bouton horaire" aria-label="Bouton du sous menu orchestre pour connaitre les horaires" title="Les horaires">Les horaires</a></li>
                         <li class="header-sous-button"><a href="ecole-de-musique.html#preinscription"  alt="bouton preinscription" aria-label="Bouton du sous menu orchestre pour rejoindre le formulaire de préinscription" title="Se préinscrire">Se préinscrire</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-instruments header-button"><a href="instruments.html"  alt="bouton page des instruments" aria-label="Cliques sur ce bouton Choix d'instruments pour te rendre sur la page de la selection de ton instrument et passe ton curseur sur le menu pour naviguer sur cette page" title="Choix d'instruments">Choix d'instrument</a>
+                    <ul class="dropdown-menu dropdown-menu-instrument">
+                        <li class="header-sous-button"><a href="instruments.html#instruments"  alt="bouton instruments proposés" aria-label="Bouton du sous menu Choix d'instrument pour rejoindre la présentation des instruments que nous proposons" title="Les instruments proposés">Les instruments proposés</a></li>
+                        <li class="header-sous-button"><a href="instruments.html#equipe-pedago"  alt="bouton equipe pedagogique" aria-label="Bouton du sous menu orchestre pour découvrir l'équipe pédagogique" title="L'équipe pédagogique">L'équipe pédagogique</a></li>
                     </ul>
                 </li>
                 <li class="header-button"><a href="contact.html#selectionformulaire" aria-label="Cliques sur ce bouton pour aller sur la page de contact" alt="Bouton page contact" title="Contactez-nous">Contactez-nous</a></li>
@@ -66,13 +73,13 @@
             <div class="school-news-content">
                 <div class="school-news-content-text">
                     <h3>Informations</h3>
-                    <p>NOUVEAUTÉ 2024/2025 : les élèves utiliseront la méthode SOLFY pour apprendre à lire la musique ! Une méthode numérique en remplacement du livre papier !</p>
+                    <p>NOUVEAUTÉS : les élèves utiliseront la méthode SOLFY pour apprendre à lire la musique ! Une méthode numérique en remplacement du livre papier !</p>
                     <p>A chaque fin d'année, tous les élèves bénéficient d'une évaluation personnalisée.</p>
                     <p>L'école de musique acceuille les enfants (dès 5 ans) et les adultes sans limite d'âge.</p>
                     <p>Pour toute information, n'hésitez pas à nous contacter au 06.20.34.21.60 ou contact@hilariter.fr</p>
                 </div>
                 <div class="school-news-orchestra-text-img">
-                    <img src="ressources/img/ecole-de-musique/inscription-hilariter.png" alt="affiche inscription" title="affiche d'inscription" aria-label="Affiche d'inscription">
+                    <img src="ressources/img/ecole-de-musique/inscription-hilariter-2025-2026.png" alt="affiche inscription" title="affiche d'inscription" aria-label="Affiche d'inscription">
                 </div>
             </div>
         </article>
@@ -90,49 +97,49 @@
                 <h3>Perfectionnement / Adultes<p>Mercredi, mercredi, 18h30 à 19h30</p></h3>
             </div>
         </article>
-        <article class="school-registration">
+        <section class="school-registration">
             <h2 id="preinscription" class="school-registration-h2">Préinscrivez-vous</h2>
             <div class="school-registration-content">
                 <article class="school-registration-content-form">
                     <h3>Formulaire d'inscription</h3>
-                    <form class="form">
+                    <form class="form" onsubmit="alert(`Vous êtes maintenant préinscrit, bienvenue à l'Harmonie Hilariter. N'hésitez pas à nous contacter si besoin.`);return false">
                         <div class="form-radio-insription">
                             <label for="#">Choisissez votre formule :</label><br><br>
-                            <input type="radio" id="essai" name="inscription" required>
+                            <input class="radio" type="radio" id="essai" name="inscription" required>
                             <label for="essai">Essai</label><br>
-                            <input type="radio" id="inscription" name="inscription" required>
+                            <input class="radio" type="radio" id="inscription" name="inscription" required>
                             <label for="inscription">Inscription</label><br>
-                            <input type="radio" id="Réinscription" name="inscription" required>
+                            <input class="radio" type="radio" id="Réinscription" name="inscription" required>
                             <label for="Réinscription">Réinscription</label>                        
                         </div>
 
                         <label for="nom-eleve">Nom de l'élève</label>
-                        <input type="text" name="nom-evele" id="nom-evele" placeholder=" Nom" required>
+                        <input type="text" name="nom-evele" id="nom-evele" placeholder="Nom" required>
                         <label for="nom-eleve">Prénom de l'élève</label>
-                        <input type="text" name="nom-evele" id="nom-evele" placeholder=" Prénom" required>
+                        <input type="text" name="nom-evele" id="nom-evele" placeholder="Prénom" required>
 
 
                         <label for="date-de-naissance-eleve">Date de naissance de l'élève</label>
-                        <input type="date" name="date-de-naissance-eleve" id="date-de-naissance-eleve" placeholder=" JJ/MM/AAAA" required>
+                        <input type="date" name="date-de-naissance-eleve" id="date-de-naissance-eleve" placeholder="JJ/MM/AAAA" required>
 
                         
                         <div class="form-adresse">
                             <label for="adresse">Adresse</label><br>
-                            <input type="text" name="adresse" id="adresse" placeholder=" Adresse" required><br>
-                            <input type="text" name="code-postal" id="code-postal" placeholder=" Code postal" required><br>                    
-                            <input type="text" name="ville" id="ville" placeholder=" Ville" required><br>
+                            <input type="text" name="adresse" id="adresse" placeholder="Adresse" required><br>
+                            <input type="text" name="code-postal" id="code-postal" placeholder="Code postal" required><br>                    
+                            <input type="text" name="ville" id="ville" placeholder="Ville" required><br>
                         </div>
 
                         <label for="telephone">Télephone</label>
-                        <input type="tel" name="telephone" id="telephone" placeholder=" 01 23 45 67 89" required>
+                        <input type="tel" name="telephone" id="telephone" placeholder="01 23 45 67 89" required>
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder=" Exemple@gmail.com" required>                        
+                        <input type="email" name="email" id="email" placeholder="Exemple@gmail.com" required>                        
 
                         <div>
                             <label for="">L'élève concerné a-t-il déjà pratiqué la musique ?</label><br>
-                            <input type="radio" id="oui" name="ouinon" required>
+                            <input class="radio" type="radio" id="oui" name="ouinon" required>
                             <label for="oui">Oui</label><br>
-                            <input type="radio" id="non" name="ouinon" required>
+                            <input class="radio" type="radio" id="non" name="ouinon" required>
                             <label for="non">Non</label>                        
                         </div>
 
@@ -154,34 +161,13 @@
                             <option value="Tuba">Tuba</option>
                             <option value="Percussion-batterie">Percussion / Batterie</option>
                         </select>
-                        <!-- <input class="submit button" href="#modalId" type="submit" name="submit" id="submit"> -->
-
-                        <!-- conteneur ("container") principal -->
-                        <div id="container">
-                        <!-- on créé un lien avec la classe "button" pointant vers l'id "modalId" ci-dessous -->
-                        <a class="button" href="#modalId" title="Envoyer le formulaire d'inscription" aria-label="Envoyer le formulaire d'inscription">Envoyer le formulaire</a>
-                        </div>
-
-                        <!-- div avec l'id "modalId" et la classe "overlay" pour l'effet d'overlay -->
-                        <!-- cette div est d'abord cachée : c'est en cliquant sur le lien ci-dessous qu'on va la faire apparaître ; voir fichier CSS -->
-                        <div id="modalId" class="overlay">
-                        <!-- contenu de la modale avec une classe du même nom : "modal" -->
-                            <div class="modal">
-                                <h2>Envoyé</h2>
-                                <!-- lien permettant de "fermer" la modale : croix s'affichera en haut à droite -->
-                                <div class="content">
-                                    <p>Vous êtes désormé préinscrit <br> Nous vous recontacterons prochainement. </p>
-                                </div>
-                                <a class="close" href="index.html" title="Retourner vers l'accueil" aria-label="Retourner à l'accueil">Retourner à l'accueil</a> <!-- &times; permet d'afficher une croix ; ce qui aurait pu sinon être fait via CSS, une icône, etc... -->
-
-                            </div>
-                        </div>
-
+                        
+                        <input class="submit" type="submit" value="Envoyer le formulaire" name="submit" id="submit">
 
                     </form>
                 </article>
 
-                <article class="school-registration-content-informations">
+                <section class="school-registration-content-informations">
                     <article>
                         <h3 class="essaigratuit">POSSIBILITÉ D'ESSAI GRATUIT TOUT LE MOIS DE SEPTEMBRE</h3>
                         <h4>
@@ -230,11 +216,10 @@
                             </ul>
                         </h4>
                     </article>                       
-                </article>
+                </section>
             </div>
-        </article>
+        </section>
     </main>
-
     
     <footer>
         <h2 class="nos-partenaires">Nos partenaires</h2>

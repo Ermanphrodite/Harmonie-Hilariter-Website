@@ -11,7 +11,7 @@ main {
 .slide-1 {
     margin-top: 120px;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,6 +19,7 @@ main {
 
 .slide-1-image-principale {
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     opacity: 80%;
@@ -43,7 +44,7 @@ main {
 
 .slide-1-content {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -197,6 +198,9 @@ main {
     display: flex;
 }
 
+
+
+
 .slide-3-orchestra-presentation-text {
     display: flex;
     flex-direction: column;
@@ -218,6 +222,16 @@ main {
     font-weight: 500;
 }
 
+.slide-3-orchestra-presentation-text-bureau p{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
 .slide-3-orchestra-presentation-img {
     width: 100%;
     display: flex;
@@ -236,19 +250,13 @@ main {
 
 
 
-.slide-3-orchestra-presentation-text-bureau p{
-    width: 100%;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 .slide-3-bleu-iso {
     text-align: center;
     color: #01295F;
     font-weight: bold;
 }
+
+
 
 .slide-3-musicians {
     width: 90%;
@@ -273,6 +281,10 @@ main {
     border-radius: 4px;
 }
 
+
+
+
+
 .slide-3-musicians-text {
     width: 100%;
     display: flex;
@@ -288,17 +300,6 @@ main {
     padding: 10px;
     text-align: justify;
     font-weight: 500;
-}
-
-.slide-3-scrolling-button {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-    margin: 10px;
-
 }
 
 .slide-3-musicians-text-effectif, h3 {
@@ -320,6 +321,11 @@ main {
     box-shadow: 0px 0px 10px #01295F;
 }
  
+
+
+
+
+
 .slide-1:hover .slide-1-content {
     background-color: rgba(128, 128, 128, 0.651);
     backdrop-filter: blur(5px);
@@ -329,6 +335,11 @@ main {
     color: black;
     background-color: #FFB30F;
 } 
+
+
+
+
+
 
 h2 {
     font-family: 'Montserrat';
@@ -353,6 +364,11 @@ h3 {
     border-radius: 4px;
     box-shadow: 0px 0px 2px #012a5fdc;
 }
+
+
+
+
+
 
 .slide-2-h2-1, .slide-2-h2-2, .slide-3-h2-1, .slide-3-h2-2 {
     scroll-margin-top: 170px;
