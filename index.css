@@ -9,7 +9,7 @@ main {
 /* SLIDE 1 */
 
 .slide-1 {
-    margin-top: 120px;
+    margin-top: 120px; /*margin top 120 correspond à l'épaisseur du header*/
     width: 100%;
     height: 100vh;
     display: flex;
@@ -39,6 +39,7 @@ main {
 
 .slide-1-image-principale img {
     width: 100%;
+    object-fit: cover;
     display: flex;
 }
 
@@ -101,6 +102,12 @@ main {
 .slide-1-content .rejoingnez-les-reseaux {
     top: 15%;
 }
+
+.slide-1:hover .slide-1-content {
+    background-color: rgba(128, 128, 128, 0.651);
+    backdrop-filter: blur(5px);
+}
+
 
 
 /* SLIDE 2 */
@@ -176,6 +183,15 @@ main {
     border-radius: 8px;
 }
 
+.cards a:hover{
+    color: black;
+    background-color: #FFB30F;
+}
+
+.slide-2-stage-content li:hover a{
+    color: black;
+    background-color: #FFB30F;
+} 
 
 /* SLIDE 3 */
 
@@ -303,7 +319,7 @@ main {
 }
 
 .slide-3-musicians-text-effectif, h3 {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-size: 20px;
 }
 
@@ -320,22 +336,6 @@ main {
     border-radius: 4px;
     box-shadow: 0px 0px 10px #01295F;
 }
- 
-
-
-
-
-
-.slide-1:hover .slide-1-content {
-    background-color: rgba(128, 128, 128, 0.651);
-    backdrop-filter: blur(5px);
-}
-
-.cards a:hover{
-    color: black;
-    background-color: #FFB30F;
-} 
-
 
 
 
@@ -435,6 +435,7 @@ h3 {
     .slide-1-image-trois img {
         width: 100%;
         display: flex;
+        object-fit: cover;
     }
 
     .slide-1-image-quatre {
@@ -498,7 +499,8 @@ h3 {
         width: 100%;
         display: flex;
         justify-content: center;
-        opacity: 80%; 
+        opacity: 80%;
+        object-fit: cover; 
     }
 
     .slide-1-image-quatre img {
@@ -795,7 +797,8 @@ h3 {
         width: 100%;
         display: flex;
         justify-content: center;
-        opacity: 80%;        
+        opacity: 80%;
+        object-fit: cover;        
     }
 
     .slide-1-image-trois {
