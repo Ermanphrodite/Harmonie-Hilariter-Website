@@ -500,7 +500,6 @@ h3 {
         display: flex;
         justify-content: center;
         opacity: 80%;
-        object-fit: cover; 
     }
 
     .slide-1-image-quatre img {
@@ -797,8 +796,7 @@ h3 {
         width: 100%;
         display: flex;
         justify-content: center;
-        opacity: 80%;
-        object-fit: cover;        
+        opacity: 80%;      
     }
 
     .slide-1-image-trois {
