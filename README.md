@@ -1,4 +1,4 @@
-Lien vers le site : [Site de l'Harmonie Hilariter](https://ermanphrodite.github.io/Harmonie-Hilariter-Website/)
+Lien vers le site : [Site de l'Harmonie Hilariter](https://ermanphrodite.github.io/Harmonie-Hilariter-Website/index)
 
 Mon premier projet - Executé dans le cadre d'une initiation au code HTML & CSS de 15 jours dispensée par l'association Z Code pour l'emploi.
 Projet sujet à des évolutions au fil des connaissances acquises chez Epitech - Lille.
