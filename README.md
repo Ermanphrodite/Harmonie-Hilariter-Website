@@ -1,4 +1,6 @@
-Mon premier projet - Executé dans le cadre d'une initiation au code HTML & CSS de 15 jours
+Mon premier projet - Executé dans le cadre d'une initiation au code HTML & CSS de 15 jours.
+Projet sujet à des évolutions au fil des connaissances acquises chez Epitech - Lille.
+Ce projet à pour but d'être exploité courant 2027.
 
 ---
 tags:
